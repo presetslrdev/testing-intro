@@ -1,7 +1,3 @@
-function notImplemented() {
-  throw new Error('Корзина ещё не реализована. Сначала прочитайте тесты.');
-}
-
 function addToCart(cart, product, quantity) {
   if (!Array.isArray(cart) || typeof product !== 'object' || typeof quantity !== 'number') {
     throw new RangeError('Неверный тип аргументов');
